@@ -1,10 +1,18 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { Container, Image } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import logo from '../../images/logo.png'
 import './Header.css'
+import  { AuthContext } from '../../Context/UserContext';
 
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext)
     return (
         <Navbar style={{backgroundColor: '#8000ff',}} expand="lg">
       <Container>
@@ -19,7 +27,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/Faq">FAQ</Nav.Link>
             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
           </Nav>
-          {/* <Nav >
+          <Nav >
             {
               user?.uid ?
                 <button className='log-out' onClick={logOut}>Log Out</button>
@@ -39,7 +47,7 @@ const Header = () => {
             }</Nav.Link>
           </OverlayTrigger></div>
             
-          </Nav> */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
