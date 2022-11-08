@@ -1,7 +1,13 @@
 .footer-container{
     margin-top: 40px;
+    background-color: #a64dff;
+    padding: 20px 0;
+}
+.footer-icon{
+    background: #fff !important;
+    margin: 5px 10px;
+    color: #a64dff !important;
 }
 .text-center{
-    background-color: #a64dff;
     color: #fff;
 }
