@@ -1,0 +1,64 @@
+.slide img
+{
+    height: 700px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.banner-end
+{
+    margin-top: 50px;
+}
+
+.banner-end img
+{
+    width: 100%;
+}
+.banner-text
+{
+    margin-left: 20px;
+    margin-top: 130px;
+}
+.banner-text h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #202C45;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.banner-text p
+{
+    font-size: 14px;
+}
+.carousel-caption{
+    bottom: 50% !important;
+}
+
+
+@media screen and (max-width:576px) {
+    .slide img
+    {
+        height: 300px;
+    }
+    .slide-text
+    {
+        font-size: 10px;
+    }
+    .banner-text{
+        margin-top: 10px;
+    }
+
+    .banner-text h2
+        {
+            font-size: 20px;
+            font-weight: 700;
+            color: #202C45;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .banner-text p
+        {
+            font-size: 12px;
+        }   
+}
