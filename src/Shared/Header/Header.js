@@ -21,7 +21,7 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto nav-item text-white">
+          <Nav className="mx-auto nav-item text-white">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
             <Nav.Link as={Link} to="/Faq">FAQ</Nav.Link>
@@ -33,8 +33,8 @@ const Header = () => {
                 <button className='log-out' onClick={logOut}>Log Out</button>
               :
               <>
-                <Nav.Link as={Link} to="/login"><Button variant="outline-primary">Login</Button></Nav.Link>
-                <Nav.Link as={Link} to="/register"><Button variant="outline-secondary">Register</Button></Nav.Link>
+                <Nav.Link className='nav-btn ' as={Link} to="/login"><Button className='text-btn' variant="outline-dark">Login</Button></Nav.Link>
+                <Nav.Link className='nav-btn' as={Link} to="/register"><Button className='text-btn' variant="outline-dark">Register</Button></Nav.Link>
               </>
             }
           </Nav>

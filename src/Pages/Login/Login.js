@@ -62,7 +62,7 @@ const Login = () => {
                     <Form.Control type="password" name="password" placeholder="Password" required/>
                 </Form.Group>
                 <button className='login'>Login</button>
-                <p className='text-white mt-3'>New to Gyan <Link to='/register'> Create a New Account</Link></p>
+                <p className='text-white mt-3'>New to SquidFood <Link to='/register'> Create a New Account</Link></p>
                 <div className='d-flex justify-content-around align-items-center'>
                     <h4 className='log-text'>Or login with</h4>
                     <span>

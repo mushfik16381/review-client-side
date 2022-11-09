@@ -10,12 +10,12 @@
     font-weight: 600;
 }
 .login-container form{
-    background: #656e79;
+    background: #bf80ff;
     padding: 40px;
     border-radius: 20px;
 }
 .form-label{
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .login{
     width: 100%;

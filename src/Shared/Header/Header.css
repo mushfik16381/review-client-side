@@ -4,10 +4,14 @@
     font-weight: 500;
     margin: 0 20px;
 }
+.nav-btn{
+    margin: 0 !important;
+}
+.text-btn{
+    color: #fff !important;
+    font-weight: 600 !important;
+}
 @media only screen and (max-width: 600px){
-    .toggle{
-        display: none ;
-    }
     .navbar-nav{
         margin: 15px 0;
     }
@@ -24,5 +28,8 @@
       margin-right: 0 !important;
       width: 100%;
       margin: 10px auto;
+    }
+    .text-btn{
+        width: 100%;
     }
   }
