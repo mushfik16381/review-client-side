@@ -1,0 +1,43 @@
+.card-container{
+    border-radius: 0;
+    border-radius: 20px !important;
+}
+.img-container{
+    height: 220px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card_text h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.card-details .cor{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-details .dur{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.btn-enroll{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn-enroll .btn-enroll-detail{
+    background: #8000ff;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.btn-enroll .btn-enroll-detail:hover{
+    background:  #bf80ff;
+}

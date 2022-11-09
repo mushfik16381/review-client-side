@@ -20,6 +20,9 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/services',
+                loader: async() => {
+                    return fetch(`https://reviews-server.vercel.app/services`)
+                },
                 element: <Services></Services>
             },
             {
