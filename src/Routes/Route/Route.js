@@ -5,6 +5,9 @@ import Error from "../../Pages/Error/Error";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
+import Reviews from "../../Pages/Reviews/Reviews";
+import Services from "../../Pages/Services/Services";
+import PrivateRoute from "../PrivetRoute/PrivetRoute";
 
 export const routes = createBrowserRouter([
     {
@@ -14,6 +17,14 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/services',
+                element: <Services></Services>
+            },
+            {
+                path: '/reviews',
+                element: <PrivateRoute><Reviews></Reviews></PrivateRoute>
             },
             {
                 path: '/blog',
