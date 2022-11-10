@@ -1,0 +1,51 @@
+.add_service_container{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.add_title{
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.add_service_container input{
+    width: 40%;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+.add_service_container textarea{
+    width: 40%;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+.add_service_btn{
+    border: none;
+    background: #8000ff;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 600px){
+    .add_service_container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .add_title {
+        font-size: 29px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .add_service_container input {
+        width: 90%;
+    }
+    .add_service_container textarea{
+        width: 90%;
+    }
+}

@@ -8,6 +8,8 @@ import { AuthContext } from '../../Context/UserContext';
 import './Login.css'
 
 const Login = () => {
+    let title = "Squid Food -Login";
+    document.title = title;
     const {signIn, providerLogin} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();

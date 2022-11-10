@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './AddService.css'
 
 const AddService = () => {
+    let title = "Squid Food -Add Service";
+   document.title = title;
     const [service, setService] = useState({})
 
     const handleAddUser = event =>{
@@ -31,21 +33,20 @@ const AddService = () => {
         setService(newService)
     }
     return (
-        <div>
-            <h3>AddService</h3>
+        <div className='add_service_container'>
+            <h3 className='add_title'>Here Service are Added</h3>
             <form onSubmit={handleAddUser}>
-                <input onBlur={handleInputBlur} type="text" name='name' placeholder='name' required/>
+                <input onBlur={handleInputBlur} type="text" name='name' placeholder='Service Name' required/>
                 <br />
-                <input onBlur={handleInputBlur} type="text" name='price' placeholder='price' required/>
+                <input onBlur={handleInputBlur} type="text" name='price' placeholder='Service Fee' required/>
                 <br />
-                <input onBlur={handleInputBlur} type="text" name='rating' placeholder='rating' required/>
+                <input onBlur={handleInputBlur} type="text" name='rating' placeholder='Rating' required/>
                 <br />
-                <input onBlur={handleInputBlur} type="text" name='image_url' placeholder='imd_address' required/>
+                <input onBlur={handleInputBlur} type="text" name='image_url' placeholder='Image Url' required/>
                 <br />
-                {/* <input className='text_area' onBlur={handleInputBlur} type="textarea" name='details' placeholder='details' required/>
-                <br /> */}
-                <textarea onBlur={handleInputBlur} name="details" id="" cols="30" rows="5"></textarea>
-                <button type='submit'>Add User</button>
+                <textarea onBlur={handleInputBlur} placeholder='Service Details' name="details" id="" cols="30" rows="5"></textarea>
+                <br />
+                <button className='add_service_btn' type='submit'>Add Service</button>
             </form>
         </div>
     );

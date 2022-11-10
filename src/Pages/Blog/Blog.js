@@ -3,6 +3,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import './Blog.css'
 
 const Blog = () => {
+    let title = "Squid Food -Blog";
+    document.title = title;
     return (
         <div className='blog-container'>
             <div className="overlay-blog">

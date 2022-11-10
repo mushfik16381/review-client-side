@@ -10,6 +10,8 @@ import Subscribe from '../Subscribe/Subscribe';
 import './Home.css'
 
 const Home = () => {
+  let title = "Squid Food -Home";
+  document.title = title;
     const limit = useLoaderData();
     console.log(limit)
     return (
