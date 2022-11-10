@@ -28,7 +28,7 @@ const Service = ({service}) => {
                         </div>
                     </div>
                     <div className='btn-enroll'>
-                    <Link to='/checkout'><button className='btn-enroll-detail'>Read More</button></Link>
+                    <Link to={`/services/${_id}`}><button className='btn-enroll-detail'>Read More</button></Link>
                     </div>
                 </Card.Body>
             </Card>
