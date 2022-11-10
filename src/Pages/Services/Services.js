@@ -7,7 +7,6 @@ const Services = () => {
     let title = "Squid Food -Services";
     document.title = title;
     const services = useLoaderData();
-    console.log(services)
     return (
         <div className='service-container'>
             {

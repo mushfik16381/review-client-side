@@ -6,15 +6,20 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import { AuthContext } from '../../Context/UserContext';
 import './Login.css'
+import Loader from '../../Utilities/Loader/Loader';
 
 const Login = () => {
     let title = "Squid Food -Login";
     document.title = title;
-    const {signIn, providerLogin} = useContext(AuthContext);
+    const {signIn, providerLogin,loading} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
     const from = location.state?.from?.pathname || '/'
+    if(loading){
+        return <Loader></Loader>
+    }
+
 
     const handleSubmit = event =>{
         event.preventDefault();
