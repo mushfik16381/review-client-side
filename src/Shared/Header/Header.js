@@ -24,7 +24,7 @@ const Header = () => {
           <Nav className="mx-auto nav-item text-white">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/services-add">Add Service</Nav.Link>
+            <Nav.Link as={Link} to="/service-add">Add Service</Nav.Link>
             <Nav.Link as={Link} to="/reviews">Reviews</Nav.Link>
             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
           </Nav>
