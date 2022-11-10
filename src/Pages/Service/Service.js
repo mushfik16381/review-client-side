@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import './Service.css'
 
 const Service = ({service}) => {
@@ -9,7 +10,11 @@ const Service = ({service}) => {
     return (
         <div>
             <Card className='card-container'>
+            <PhotoProvider>
+              <PhotoView  src={image_url}>
                 <img className='img-container' src={image_url} alt="" />
+              </PhotoView>
+            </PhotoProvider>
                 <Card.Body>
                     <Card.Title className='card_text'>
                         <h3>{name}</h3>

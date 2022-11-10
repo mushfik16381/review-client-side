@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const LimitService = ({lim}) => {
     const {_id, name, details, image_url, price, rating} = lim;
@@ -8,7 +9,11 @@ const LimitService = ({lim}) => {
     return (
         <div>
             <Card className='card-container'>
+            <PhotoProvider>
+              <PhotoView  src={image_url}>
                 <img className='img-container' src={image_url} alt="" />
+              </PhotoView>
+            </PhotoProvider>
                 <Card.Body>
                     <Card.Title className='card_text'>
                         <h3>{name}</h3>

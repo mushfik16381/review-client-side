@@ -39,18 +39,21 @@ const Home = () => {
         <About></About>
         {/* ----------------------------------------- */}
           
-          <div className='service-limit'>
-            {
-              limit.map((lim) => (
-                <LimitService
-                  lim={lim}
-                  key={lim._id}
-                ></LimitService>
-              ))
-            }
+          <div className='service-home'>
+            <div className='about-title text-center'>Our Services</div>
+            <div className='service-limit'>
+              {
+                limit.map((lim) => (
+                  <LimitService
+                    lim={lim}
+                    key={lim._id}
+                  ></LimitService>
+                ))
+              }
+            </div>
           </div>
-          <div>
-            <Link to={'/services'}><button>Show All</button></Link>
+          <div className='text-center mt-4'>
+            <Link to={'/services'}><button className='home-btn-service'>Show All</button></Link>
           </div>
 
         {/* ----------------------------------------- */}
