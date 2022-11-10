@@ -20,7 +20,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/',
                 loader: async() =>{
-                    return fetch(`http://localhost:5000/`)
+                    return fetch(`https://reviews-server.vercel.app/`)
                 },
                 element: <Home></Home>
             },
@@ -49,7 +49,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/my-reviews',
                 loader: async() => {
-                    return fetch(`http://localhost:5000/reviews`)
+                    return fetch(`https://reviews-server.vercel.app/reviews`)
                 },
                 element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>,
             },
