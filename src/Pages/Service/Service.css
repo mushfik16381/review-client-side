@@ -3,6 +3,7 @@
     border-radius: 20px !important;
 }
 .img-container{
+    width: 100%;
     height: 220px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

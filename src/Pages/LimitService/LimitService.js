@@ -1,10 +1,9 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import './Service.css'
 
-const Service = ({service}) => {
-    const {_id, name, details, image_url, price, rating} = service;
+const LimitService = ({lim}) => {
+    const {_id, name, details, image_url, price, rating} = lim;
     const detail = details.slice(0, 180);
     return (
         <div>
@@ -36,4 +35,4 @@ const Service = ({service}) => {
     );
 };
 
-export default Service;
+export default LimitService;

@@ -1,13 +1,17 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link, useLoaderData } from 'react-router-dom';
 import banner1 from '../../images/banner1.png'
 import banner2 from '../../images/banner2.png'
 import banner3 from '../../images/banner3.png'
 import About from '../About/About';
+import LimitService from '../LimitService/LimitService';
 import Subscribe from '../Subscribe/Subscribe';
 import './Home.css'
 
 const Home = () => {
+    const limit = useLoaderData();
+    console.log(limit)
     return (
         <div>
         <Carousel>
@@ -33,6 +37,23 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
         <About></About>
+        {/* ----------------------------------------- */}
+          
+          <div className='service-limit'>
+            {
+              limit.map((lim) => (
+                <LimitService
+                  lim={lim}
+                  key={lim._id}
+                ></LimitService>
+              ))
+            }
+          </div>
+          <div>
+            <Link to={'/services'}><button>Show All</button></Link>
+          </div>
+
+        {/* ----------------------------------------- */}
         <Subscribe></Subscribe>
       </div>
     );
