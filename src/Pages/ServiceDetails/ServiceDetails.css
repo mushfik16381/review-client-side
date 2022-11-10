@@ -4,13 +4,7 @@
     padding: 20px;
     margin-right: 10px;
 }
-.title{
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 33px;
-    color: #6287ad;
-    text-transform: capitalize;
-}
+
 .name {
     font-size: 47px;
     font-weight: 700;

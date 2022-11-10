@@ -4,6 +4,7 @@ import banner1 from '../../images/banner1.png'
 import banner2 from '../../images/banner2.png'
 import banner3 from '../../images/banner3.png'
 import About from '../About/About';
+import Subscribe from '../Subscribe/Subscribe';
 import './Home.css'
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
         <About></About>
+        <Subscribe></Subscribe>
       </div>
     );
 };
