@@ -1,0 +1,30 @@
+.dlt_btn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background: #8000ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.edit_btn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background: #8000ff9d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 600px){
+    .my_review_btn{
+        text-align: end;
+    }
+    .dlt_btn{
+        margin-top: 5px;
+    }
+}

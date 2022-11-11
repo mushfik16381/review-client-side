@@ -1,23 +1,26 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import './MyReview.css'
 
-const MyReview = ({my_rev}) => {
-    console.log(my_rev)
-    
-    const{userName, seviceName, message, service_id, img_url} = my_rev;
-    
+const MyReview = ({my_rev, handleDelete}) => {
+    const{userName, seviceName, message, service_id, img_url, _id } = my_rev;
     return (
-        <div>
-            <div>
+        <div className='d-flex'>
+            <div className='review_containers'>
                 <div>
-                    <img style={{width:'80px'}} src={img_url} alt="" />
+                    <img className='review_img' src={img_url} alt="" />
+                    <span>{userName}</span>
                 </div>
                 <div>
-                    <h3>Food Name: {seviceName}</h3>
-                    <h3>{message}</h3>
+                    <h2>{message}</h2>
+                    
+                </div>
+                <div className='my_review_btn'>
+                <Link to={`/update-review/${_id}`}><button  className='edit_btn'>Edit</button></Link>
+                <button onClick={() => handleDelete(_id)} className='dlt_btn'>Delete</button>
                 </div>
             </div>
-            
+                
         </div>
     );
 };

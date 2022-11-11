@@ -10,6 +10,7 @@ import Register from "../../Pages/Register/Register";
 import Reviews from "../../Pages/Reviews/Reviews";
 import ServiceDetails from "../../Pages/ServiceDetails/ServiceDetails";
 import Services from "../../Pages/Services/Services";
+import UpdateReviews from "../../Pages/UpdateReviews/UpdateReviews";
 import PrivateRoute from "../PrivetRoute/PrivetRoute";
 
 export const routes = createBrowserRouter([
@@ -52,6 +53,13 @@ export const routes = createBrowserRouter([
                     return fetch(`https://reviews-server.vercel.app/reviews`)
                 },
                 element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>,
+            },
+            {
+                path: '/update-review/:id',
+                loader: ({params}) =>
+                     fetch(`https://reviews-server.vercel.app/esreviews/${params.id}`)
+                ,
+                element: <PrivateRoute><UpdateReviews></UpdateReviews></PrivateRoute>,
             },
             {
                 path: '/blog',

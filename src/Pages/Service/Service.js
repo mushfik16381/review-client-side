@@ -21,8 +21,9 @@ const Service = ({service}) => {
                     </Card.Title>
                     <Card.Text>
                         <span>
-                            {detail }.. <Link to={`${_id}`}>Read More</Link>
+                            {detail }..<Link to={`${_id}`}>Read More</Link> 
                         </span>
+                        
                     </Card.Text>
                     <div className='d-flex justify-content-between card-details'>
                         <div>

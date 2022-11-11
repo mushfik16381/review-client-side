@@ -26,13 +26,15 @@ const ServiceDetails = () => {
         const form = event.target;
         const message = form.message.value;
         const userName = user?.displayName || 'unregistered';
+        const email = user?.email || 'unregistered';
         const img_url = user?.photoURL || 'not found'
         const reviews = {
             service_id: _id,
             seviceName: name,
             message,
             userName,
-            img_url
+            img_url,
+            email
         }
         fetch('https://reviews-server.vercel.app/reviews', {
             method: 'POST',
@@ -69,7 +71,7 @@ const ServiceDetails = () => {
                     <button className='btn-enroll-detail'>Enroll Now</button></Link>
                     </div> */}
                     <div className='review_container'>
-                        <h3>Here Riview</h3>
+                        <h3>Here Review</h3>
                         <form onSubmit={handleReview} >
                             <div >
                             {/* <input className='sub-email' name="message" type="text"  placeholder='text' /> */}
