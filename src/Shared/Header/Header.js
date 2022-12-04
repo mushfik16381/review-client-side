@@ -14,7 +14,7 @@ import  { AuthContext } from '../../Context/UserContext';
 const Header = () => {
     const {user, logOut} = useContext(AuthContext)
     return (
-        <Navbar style={{backgroundColor: '#8000ff',}} expand="lg">
+        <Navbar style={{backgroundColor: '#8000ff',}}   expand="lg">
       <Container>
         <Navbar.Brand as={Link} to='/'>
             <img src={logo} alt="" />
@@ -51,7 +51,7 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+        </Navbar>
     );
 };
 
